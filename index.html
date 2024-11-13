@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>꽝</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.5">
 </head>
-
 <body>
-    <script defer src="makeIMG.js"></script>
-</body>
+    <img id="random-image" src="" alt="랜덤 이미지" width="50%">
+    <script>
+        // 이미지 파일 경로 배열
+        const images = [
+            'images/lose1.jpeg',
+            'images/lose2.jpeg',
+            'images/lose3.jpeg',
+            'images/lose4.jpeg',
+            'images/lose5.gif',
+            'images/lose6.jpeg',
+            'images/lose7.jpeg',
+            'images/lose8.jpeg',
+            'images/lose9.jpeg',
+            'images/lose10.gif'
+        ];
 
+        // 랜덤으로 이미지를 선택
+        const randomIndex = Math.floor(Math.random() * images.length);
+        const randomImage = images[randomIndex];
+
+        // 이미지 요소에 랜덤 이미지 설정
+        document.getElementById('random-image').src = randomImage;
+    </script>
+</body>
 </html>
