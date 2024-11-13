@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>꽝</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+</head>
+<body>
+    <script>
+        function make_randomImage() {
+            var images = ["images/lose1.jpeg, images/lose2.jpeg, images/lose3.jpeg, images/lose4.jpeg, images/lose5.gif, images/lose6.jpeg, images/lose7.jpeg, images/lose8.jpeg, images/lose9.jpeg, images/lose10.gif"];
+            var num = Math.floor(Math.random() * images.length);
+            const img = document.createElement("img");
+
+            img.src = images[num];
+            document.body.appendChild(img);
+        }
+    </script>
+</body>
+</html>
