@@ -3,22 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>꽝</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.5">
 </head>
 
 <body>
-    <script>
-        function make_randomImage() {
-            const images = ["lose1.jpeg", "lose2.jpeg", "lose3.jpeg", "lose4.jpeg", "lose5.gif", "lose6.jpeg", "lose7.jpeg", "lose8.jpeg", "lose9.jpeg", "lose10.gif"];
-
-            const chosenImage = images[Math.floor(Math.random() * images.length)];
-            const bgImage = document.createElement("img");
-
-            bgImage.src = `images/${chosenImage}`;
-            document.body.appendChild(bgImage);
-        }
-    </script>
+    <script defer src="makeIMG.js"></script>
 </body>
 
 </html>
